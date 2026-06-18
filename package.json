@@ -1,0 +1,16 @@
+{
+  "name": "ascii-art-cli-exercise",
+  "version": "1.0.0",
+  "description": "Tiny ASCII art CLI with style and animation",
+  "private": true,
+  "type": "commonjs",
+  "bin": {
+    "ascii-art": "./bin/ascii-art.js"
+  },
+  "scripts": {
+    "ascii": "node ./bin/ascii-art.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
