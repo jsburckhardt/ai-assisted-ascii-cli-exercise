@@ -28,7 +28,7 @@ to show separation of concerns — then contrasts them with Copilot's
 ### Custom agents
 | Agent | File | Can do | Deliverable |
 | ----- | ---- | ------ | ----------- |
-| **planner** | `.github/agents/planner.md` | **Read-only.** Reads the repo and researches the web via the **Exa MCP** server. Never edits code or runs commands. | `PLAN.md` — an ordered, checkable build plan |
+| **planner** | `.github/agents/planner.md` | Reads the repo and researches via the **Exa MCP** server, then **writes only `PLAN.md`**. Read-only on the codebase — never edits source code or runs commands. | `PLAN.md` — an ordered, checkable build plan |
 | **implementer** | `.github/agents/implementer.md` | Reads `PLAN.md` + the `ascii-art` skill, edits files, runs the CLI to verify. | Working `bin/ascii-art.js` |
 
 Flow:  **planner → `PLAN.md` → implementer → working CLI.**

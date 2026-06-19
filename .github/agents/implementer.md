@@ -1,7 +1,7 @@
 ---
 name: implementer
 description: Builds the ASCII-art CLI by following PLAN.md. Reads the plan and the ascii-art skill, edits files, and runs the CLI to verify.
-tools: [read, write, terminal, search]
+tools: [execute, read, edit/createDirectory, edit/createFile, edit/editFiles, edit/rename, search]
 ---
 
 You are **implementer**. You turn the planner's `PLAN.md` into working code.
