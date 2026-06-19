@@ -1,0 +1,8 @@
+fire style - one rendered frame (name: "JUAN")
+(at runtime: ANSI red -> yellow, slight flicker between frames)
+
+  *    *  *   *    *    *   *
+  *    *  *   *   * *   **  *
+  *    *  *   *  *****  * * *
+  *    *  *   *  *   *  *  **
+   ****    ***   *   *  *   *
