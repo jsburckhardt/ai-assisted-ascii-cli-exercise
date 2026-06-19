@@ -1,0 +1,7 @@
+# ascii-art CLI
+
+Inputs:  --name (required), --style (fire|matrix|ghost), --animate
+Output:  terminal-rendered ASCII art using ANSI escape codes
+Runtime: Node.js 18+, CommonJS, no external dependencies
+Non-goals: no network calls, no external APIs, no build tooling
+Example: ascii-art --name "Juan" --style fire --animate
