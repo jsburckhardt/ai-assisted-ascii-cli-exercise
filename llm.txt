@@ -1,24 +1,10 @@
 # ASCII-art CLI
 
-> A self-contained Node.js CLI that renders a name as colored ASCII art in the
-> terminal. This file is the project map for coding agents — read the briefing
-> docs below before writing any code, then build to the contract in AGENTS.md.
+> File map for coding agents.
 
-Constraints in one line: Node.js 18+, CommonJS, **zero dependencies**, output
-via ANSI escape codes only — no network, no external APIs. `AGENTS.md` is the
-source of truth; this index only points you to it so you don't drift.
+## Docs
 
-The CLI you are building:
-`ascii-art --name "<text>" [--style <fire|matrix|ghost>] [--animate]`
-Entry point lives at `bin/ascii-art.js`, with one small pure renderer per style
-(`fire` default, `matrix`, `ghost`). `--name` is required.
-
-## Start here (read in order)
-
-- [AGENTS.md](AGENTS.md): Goal, runtime, constraints, and the full CLI contract — the source of truth.
-- [Copilot instructions](.github/copilot-instructions.md): Coding style, file layout, and dos & don'ts.
-- [PROMPT.md](PROMPT.md): The task prompt to paste into Copilot Agent mode.
-
-## Optional
-
-- [README](README.md): One-line project intro; skip if context is tight.
+- [AGENTS.md](AGENTS.md): Goal, runtime, constraints, and the CLI contract.
+- [.github/copilot-instructions.md](.github/copilot-instructions.md): Coding style and conventions.
+- [PROMPT.md](PROMPT.md): Task prompt to run in Agent mode.
+- [README.md](README.md): One-line project intro.
