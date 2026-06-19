@@ -2,19 +2,27 @@
 
 **Owner:** Juan  ·  _(tentative — watch the clock)_
 
-Same ASCII-art task, now driven by a **custom agent** instead of raw prompts.
+Same ASCII-art task — now we contrast Copilot's **out-of-the-box agents** with
+two **custom agents** that split planning from implementation.
+
+## Demo flow
+1. **Out-of-the-box first.** Show the **Research** agent ("find approaches for
+   rendering ASCII art in a terminal"), then **Code review** / **PR summary** —
+   no setup required.
+2. **Custom: planner** (`.github/agents/planner.md`) — **read-only**. It
+   researches with the **Exa MCP** server and writes `PLAN.md`. It never edits
+   code or runs commands.
+3. **Custom: implementer** (`.github/agents/implementer.md`) — reads `PLAN.md`
+   and the `ascii-art` skill, then builds `bin/ascii-art.js` and runs it.
+
+Flow:  **planner → PLAN.md → implementer → working CLI.**
 
 This branch ships:
-- `.github/agents/ascii-artist.md` — a custom agent with a tight mission, rules,
-  and an allowed tool set.
-- `.github/skills/ascii-art/SKILL.md` (+ `examples/`) — a knowledge pack the
-  agent loads when it builds the renderers.
-- `.vscode/mcp.json` — an example MCP server the agent can reach for live data.
+- `AGENTS.md` — goal, constraints, CLI contract, and the two-agent workflow.
+- `.github/agents/planner.md` and `.github/agents/implementer.md` — the custom agents.
+- `.github/skills/ascii-art/SKILL.md` (+ `examples/`) — knowledge pack for the implementer.
+- `.vscode/mcp.json` — the **Exa** MCP server used by the planner.
+- `llm.txt` — a file map of all of the above.
 
-## Try it
-1. Select the **ascii-artist** agent in Copilot.
-2. Ask it to implement the CLI.
-3. Watch it read the skill, use file + terminal tools, and (optionally) call MCP.
-
-The point: structure can live in **reusable agents and skills**, not just
-one-off prompts.
+The point: structure can live in **reusable agents, skills, and MCP** — and you
+can split read-only planning from write-capable implementation.

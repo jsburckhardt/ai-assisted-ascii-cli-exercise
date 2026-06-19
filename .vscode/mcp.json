@@ -1,8 +1,8 @@
 {
   "servers": {
-    "github": {
+    "exa": {
       "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/"
+      "url": "https://mcp.exa.ai/mcp"
     }
   }
 }

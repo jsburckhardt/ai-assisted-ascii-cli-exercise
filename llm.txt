@@ -1,0 +1,22 @@
+# ASCII-art CLI — custom agents demo
+
+> File map for coding agents.
+
+## Briefing
+
+- [AGENTS.md](AGENTS.md): Goal, constraints, CLI contract, and the two-agent workflow.
+- [PROMPT.md](PROMPT.md): Demo script — out-of-the-box agents, then custom ones.
+
+## Custom agents
+
+- [.github/agents/planner.md](.github/agents/planner.md): Read-only planner; researches via Exa MCP and writes PLAN.md.
+- [.github/agents/implementer.md](.github/agents/implementer.md): Reads PLAN.md and builds the CLI.
+
+## Tools & skills
+
+- [.vscode/mcp.json](.vscode/mcp.json): Exa MCP server config (web search/fetch) for the planner.
+- [.github/skills/ascii-art/SKILL.md](.github/skills/ascii-art/SKILL.md): Style reference for the implementer.
+
+## Reference
+
+- [README.md](README.md): One-line project intro.
