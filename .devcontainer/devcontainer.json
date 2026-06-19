@@ -1,0 +1,76 @@
+{
+    "name": "sample",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    // "runArgs": [
+    //     "--network","host"
+    // ],
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "installOhMyZshConfig": true
+        },
+        // Node is required to install deps and run the Vite dev server / build.
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        },
+        // "ghcr.io/devcontainers/features/docker-outside-of-docker": {},
+        // "ghcr.io/devcontainers/features/python": {},
+        // "ghcr.io/devcontainers/features/go:1": {
+        //     "version": "latest"
+        // },
+        // "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/stuartleeks/dev-container-features/shell-history": {},
+        "ghcr.io/jsburckhardt/devcontainer-features/just": {},
+        "ghcr.io/devcontainers/features/github-cli": {},
+        "ghcr.io/devcontainers/features/copilot-cli": {},
+        "ghcr.io/rosstaco/devcontainer-features/copilot-persistence:1": {},
+        "ghcr.io/jsburckhardt/devcontainer-features/tmux": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "chat.agent.maxRequests": 2000,
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "editor.tabSize": 4,
+                "files.autoSave": "onWindowChange",
+                "chat.customAgentInSubagent.enabled": true,
+                "eslint.format.enable": true
+            },
+            "extensions": [
+                "GitHub.vscode-github-actions",
+                "ms-azuretools.vscode-docker",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "bradlc.vscode-tailwindcss",
+                "redhat.vscode-yaml",
+                "shardulm94.trailing-spaces",
+                "tamasfe.even-better-toml",
+                "yzhang.markdown-all-in-one",
+                "bierner.markdown-mermaid",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "containerEnv": {
+        "HOST_PROJECT_PATH": "${localWorkspaceFolder}",
+        "COPILOT_OTEL_ENABLED": "${localEnv:COPILOT_OTEL_ENABLED}",
+        "COPILOT_OTEL_EXPORTER_TYPE": "${localEnv:COPILOT_OTEL_EXPORTER_TYPE}",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "http://host.docker.internal:4318",
+        "OTEL_SERVICE_NAME": "${localEnv:OTEL_SERVICE_NAME}",
+        "GIT_PAGER": "",
+        "GH_PAGER": ""
+    },
+    "postStartCommand": "tmux -S .devcontainer/.tmux-shared has-session -t sample 2>/dev/null || tmux -S .devcontainer/.tmux-shared new -d -s sample",
+    "remoteUser": "vscode",
+    "hostRequirements": {
+        "memory": "4gb"
+    },
+    "remoteEnv": {
+        "HOST_PROJECT_PATH": "${localWorkspaceFolder}"
+    },
+    "mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+    ]
+}
