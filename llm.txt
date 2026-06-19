@@ -1,23 +1,10 @@
-# ASCII-art CLI — custom agents demo
-
-> File map for coding agents: every file in this branch and what it is for.
-
-```text
-.
-├── .github/
-│   ├── agents/
-│   │   ├── implementer.md   # Write-capable agent: reads PLAN.md and builds the CLI.
-│   │   └── planner.md        # Read-only agent: researches via Exa MCP, writes PLAN.md.
-│   └── skills/
-│       └── ascii-art/
-│           ├── SKILL.md     # How each style renders; the implementer reads it first.
-│           └── examples/
-│               ├── fire-example.txt    # One rendered frame of the fire style.
-│               └── matrix-example.txt  # One rendered frame of the matrix style.
-├── .vscode/
-│   └── mcp.json     # Exa MCP server config (web search/fetch) used by the planner.
-├── AGENTS.md        # Goal, runtime, CLI contract, and the two-agent workflow.
-├── PROMPT.md        # Demo script: out-of-the-box agents first, then the custom ones.
-├── README.md        # One-line project intro.
-└── llm.txt          # This file map.
-```
+AGENTS.md                                              — Agent briefing: goal, runtime, CLI contract, and the two-agent workflow
+llm.txt                                                — This file; repo map for AI agents
+PROMPT.md                                              — Exercise 3 demo script (out-of-the-box agents, then custom planner/implementer)
+README.md                                              — Project overview
+.github/agents/planner.md                              — Planner agent (read-only; researches via Exa MCP, writes PLAN.md)
+.github/agents/implementer.md                          — Implementer agent (reads PLAN.md, builds the CLI)
+.github/skills/ascii-art/SKILL.md                      — ascii-art skill: how the fire/matrix/ghost styles render
+.github/skills/ascii-art/examples/fire-example.txt     — Sample fire-style frame
+.github/skills/ascii-art/examples/matrix-example.txt   — Sample matrix-style frame
+.vscode/mcp.json                                       — Exa MCP server config (web search/fetch) used by the planner
