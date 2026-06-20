@@ -23,7 +23,7 @@ author: Juan Burckhardt
 # Agenda
 
 <div class="subtitle">60 minutes — paced with live demos throughout</div>
-<div class="agenda"><div class="ag-item"><span class="pill">0–5 min</span><span class="badge">01</span><div class="txt"><h3>The Landscape</h3><p>Copilot modes, what changed with agents</p></div></div><div class="ag-item"><span class="pill">32–42 min</span><span class="badge">05</span><div class="txt"><h3>Live Exercise — Part 2</h3><p>Same task, structured path</p></div></div><div class="ag-item"><span class="pill">5–12 min</span><span class="badge">02</span><div class="txt"><h3>Vibe vs. Structured</h3><p>What goes wrong and why</p></div></div><div class="ag-item"><span class="pill">42–50 min</span><span class="badge">06</span><div class="txt"><h3>Tools, Skills &amp; MCP</h3><p>The agent's full toolkit + ascii-art skill demo</p></div></div><div class="ag-item"><span class="pill">12–22 min</span><span class="badge">03</span><div class="txt"><h3>Live Exercise — Part 1</h3><p>Build a CLI tool: vague prompt path</p></div></div><div class="ag-item"><span class="pill">50–56 min</span><span class="badge">07</span><div class="txt"><h3>Agents</h3><p>Out-of-the-box &amp; custom agents</p></div></div><div class="ag-item"><span class="pill">22–32 min</span><span class="badge">04</span><div class="txt"><h3>Adding Structure</h3><p>AGENTS.md, copilot-instructions.md, llm.txt</p></div></div><div class="ag-item"><span class="pill">56–60 min</span><span class="badge">08</span><div class="txt"><h3>What's Next + Q&amp;A</h3><p>RPIV, spec-driven dev, harnesses</p></div></div></div>
+<div class="agenda"><div class="ag-item"><span class="pill">0–5 min</span><span class="badge">01</span><div class="txt"><h3>The Landscape</h3><p>Copilot modes, what changed with agents</p></div></div><div class="ag-item"><span class="pill">32–42 min</span><span class="badge">05</span><div class="txt"><h3>Live Exercise — Part 2</h3><p>Same task, structured path</p></div></div><div class="ag-item"><span class="pill">5–12 min</span><span class="badge">02</span><div class="txt"><h3>Vibe vs. Structured</h3><p>What goes wrong and why</p></div></div><div class="ag-item"><span class="pill">42–50 min</span><span class="badge">06</span><div class="txt"><h3>Tools, Skills &amp; MCP</h3><p>The agent's full toolkit + ascii-art skill demo</p></div></div><div class="ag-item"><span class="pill">12–22 min</span><span class="badge">03</span><div class="txt"><h3>Live Exercise — Part 1</h3><p>Build a CLI tool: vague prompt path</p></div></div><div class="ag-item"><span class="pill">50–56 min</span><span class="badge">07</span><div class="txt"><h3>Agents</h3><p>Out-of-the-box &amp; custom agents</p></div></div><div class="ag-item"><span class="pill">22–32 min</span><span class="badge">04</span><div class="txt"><h3>Adding Structure</h3><p>AGENTS.md, copilot-instructions.md, llms.txt</p></div></div><div class="ag-item"><span class="pill">56–60 min</span><span class="badge">08</span><div class="txt"><h3>What's Next + Q&amp;A</h3><p>RPIV, spec-driven dev, harnesses</p></div></div></div>
 
 ---
 
@@ -98,7 +98,7 @@ author: Juan Burckhardt
 <!-- _footer: '⏱ 22–32 min' -->
 
 <div class="big"><span class="num">04</span>Adding Structure</div>
-<div class="desc">AGENTS.md, copilot-instructions.md, llm.txt</div>
+<div class="desc">AGENTS.md, copilot-instructions.md, llms.txt</div>
 
 ---
 
@@ -113,7 +113,7 @@ Do NOT use external APIs
 Output format: ANSI escape codes</code></pre></div><div class="card acc teal center"><div class="icon c-teal">📝</div><h3 class="fname c-teal">copilot-instructions.md</h3><div class="loc">.github/ folder</div><p class="muted">Copilot-specific: coding style, stack, dos &amp; don'ts</p><pre><code>Use TypeScript strict mode
 Prefer functional patterns
 Test with Vitest, not Jest
-No default exports</code></pre></div><div class="card acc purple center"><div class="icon c-purple">🗄️</div><h3 class="fname c-purple">llm.txt</h3><div class="loc">Project root</div><p class="muted">Any LLM: concise facts, examples, scope limits</p><pre><code># ascii-art CLI
+No default exports</code></pre></div><div class="card acc purple center"><div class="icon c-purple">🗄️</div><h3 class="fname c-purple">llms.txt</h3><div class="loc">Project root</div><p class="muted">Any LLM: concise facts, examples, scope limits</p><pre><code># ascii-art CLI
 Inputs: --name, --style, --animate
 Outputs: terminal-rendered ASCII
 Styles: fire, matrix, ghost</code></pre></div></div>
@@ -200,7 +200,7 @@ Styles: fire, matrix, ghost</code></pre></div></div>
 
 # Key Takeaways &amp; What Comes Next
 
-<div class="cols" style="grid-template-columns: 1.15fr 1fr; margin-top: 22px;"><div class="card acc green"><h3 class="c-green">Today's takeaways</h3><ul class="list check"><li>Agent mode needs structure — not just good prompts</li><li>AGENTS.md, copilot-instructions.md, and llm.txt are your briefing docs</li><li>Tools + MCP + Skills give the agent reach without hallucination</li><li>Model &amp; config choices change behaviour, not just speed</li><li>Instructions = reproducible, reviewable, version-controlled</li></ul></div><div class="stack"><div class="mini green"><div class="label c-green">Today</div><div class="name">Structured AI Dev</div></div><div class="mini blue"><div class="label c-blue">Next</div><div class="name">RPIV Framework</div></div><div class="mini teal"><div class="label c-teal">Then</div><div class="name">Spec-Driven Dev</div></div><div class="mini purple"><div class="label c-purple">Future</div><div class="name">Harnesses &amp; Loops</div></div></div></div>
+<div class="cols" style="grid-template-columns: 1.15fr 1fr; margin-top: 22px;"><div class="card acc green"><h3 class="c-green">Today's takeaways</h3><ul class="list check"><li>Agent mode needs structure — not just good prompts</li><li>AGENTS.md, copilot-instructions.md, and llms.txt are your briefing docs</li><li>Tools + MCP + Skills give the agent reach without hallucination</li><li>Model &amp; config choices change behaviour, not just speed</li><li>Instructions = reproducible, reviewable, version-controlled</li></ul></div><div class="stack"><div class="mini green"><div class="label c-green">Today</div><div class="name">Structured AI Dev</div></div><div class="mini blue"><div class="label c-blue">Next</div><div class="name">RPIV Framework</div></div><div class="mini teal"><div class="label c-teal">Then</div><div class="name">Spec-Driven Dev</div></div><div class="mini purple"><div class="label c-purple">Future</div><div class="name">Harnesses &amp; Loops</div></div></div></div>
 
 ---
 
