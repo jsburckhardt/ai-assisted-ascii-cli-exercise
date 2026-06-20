@@ -22,7 +22,7 @@ This branch ships:
 - `.github/agents/planner.md` and `.github/agents/implementer.md` — the custom agents.
 - `.github/skills/ascii-art/SKILL.md` (+ `examples/`) — knowledge pack for the implementer.
 - `.vscode/mcp.json` — the **Exa** MCP server used by the planner.
-- `llm.txt` — a file map of all of the above.
+- `llms.txt` — a file map of all of the above.
 
 The point: structure can live in **reusable agents, skills, and MCP** — and you
 can split read-only planning from write-capable implementation.
