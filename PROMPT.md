@@ -11,7 +11,7 @@ it writes any code —
 
 - `AGENTS.md` — goal, runtime, constraints, and the CLI contract.
 - `.github/copilot-instructions.md` — coding style and stack dos & don'ts.
-- `llm.txt` — concise, model-agnostic facts about the tool.
+- `llms.txt` — concise, model-agnostic facts about the tool.
 
 ## What to watch for
 - The agent now targets Node 18 CommonJS, zero dependencies, ANSI output.
