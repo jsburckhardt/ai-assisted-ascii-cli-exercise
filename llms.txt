@@ -1,6 +1,5 @@
 AGENTS.md                                              — Agent briefing: goal, runtime, CLI contract, and the two-agent workflow
 llms.txt                                               — This file; repo map for AI agents
-PROMPT.md                                              — Exercise 3 demo script (out-of-the-box agents, then custom planner/implementer)
 README.md                                              — Project overview
 .github/agents/planner.md                              — Planner agent (read-only on code; researches via Exa MCP, writes only PLAN.md)
 .github/agents/implementer.md                          — Implementer agent (reads PLAN.md, builds the CLI)
