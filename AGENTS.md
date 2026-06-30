@@ -19,13 +19,6 @@ ASCII art in the terminal.
 - `--animate` loops frames until `Ctrl+C`; clear the screen per frame (no flicker).
 - `--help` prints usage.
 
-## What's in the repo
-- **Custom agents** — `.github/agents/planner.md` (researches and writes
-  `PLAN.md`) and `.github/agents/implementer.md` (builds the CLI from the plan).
-- **MCP** — `.vscode/mcp.json` registers the **Exa** MCP server
-  (`web_search_exa`, `web_fetch_exa`).
-- **Skill** — `.github/skills/ascii-art/SKILL.md` documents the three styles.
-
 ## Done when
 - `node bin/ascii-art.js --name "Juan" --style fire` runs on the first try.
 - All three styles produce visibly distinct output.
